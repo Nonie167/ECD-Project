@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cuma Ecd</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Limelight' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+ body {
+          background-color: lightgrey;
+
+          font-family: "Lato", sans-serif;
+        }
+
+        .avatar {
+  vertical-align: left;
+  width: 200px;
+  height: 200px;
+  border-square: 200%;
+}
+        
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+        h1 {text-align: center;
+          font-family: 'Raleway';font-size: 100px;
+        }
+h2{
+  font-family: 'Limelight';font-size: 30px;
+}
+
+p{ 
+  font-family: 'times new roman';
+  font-size: 25px;
+}
+        img {
+  display: block;
+  margin-left: auto;
+  margin-right: 15px;
+}
+img {
+  float: right;
+}
+        </style>
+</head>
+
+<body>
+  <img src="logo.jpg" alt="Avatar" class="avatar">
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Cuma Educare Centre</h1>      
+      </div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="staff.html">Staff</a>
+      <a href="contacts.html">Contact</a>
+    </div>
+    
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰ Click For More Info</button>  
+    </div>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+    
+    <h2>What We do.</h2>
+<p>
+  <img src="what we do.jpg" alt="Paris" style="width:25%;">
+  We provide training, resuorces and support in the field of early childhood. Providing care for children, such as setting schedules and routines, groomimg, feeding, changin diapers, and cleaning rooms and toys. Developing and encouraging age-appropriate learning and socialization to ensure children learn basic skills and concepts, such as communication, manners, sharing, etc.
+  </p>
+    <hr>
+    <br>
+    <h2>Where we work.</h2>
+    <p>
+      <img src="day care.jpg" alt="Paris" style="width:25%;">
+      We are from Cape Town in a rural area. Based in  Khayelitsha, Nkanini. We saw that place as a need especially for children because that place was a new place which many people went there to have homes. So we thought of having a daycare centre there to take good care of children and also teach them what they should know.
+    </p>
+    
+</body>
+</html>

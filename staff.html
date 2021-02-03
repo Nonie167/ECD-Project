@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cuma Ecd</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>   
+body {
+  background-color: lightgrey;
+}
+.avatar {
+  vertical-align: right;
+  width: 200px;
+  height: 200px;
+  border-square: 200%;
+}
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+          }
+          
+          .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+          }
+          
+          .sidebar a:hover {
+            color: #f1f1f1;
+          }
+          
+          .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+          }
+          
+          .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+          }
+          
+          .openbtn:hover {
+            background-color: #444;
+          }
+          
+          #main {
+            transition: margin-left .5s;
+            padding: 16px;
+          }
+          
+          /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+          @media screen and (max-height: 450px) {
+            .sidebar {padding-top: 15px;}
+            .sidebar a {font-size: 18px;}
+          }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+h3{
+  font-family: 'Limelight';font-size: 20px;
+}
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+          </style>
+    </head>
+    <body>
+      <img src="logo.jpg" alt="Avatar" class="avatar">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="staff.html">Staff</a>
+            <a href="contacts.html">Contact</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">☰ Click For More Info</button>  
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
+          <!-- MAIN (Center website) -->
+<div class="main">
+
+    <h1>STAFF</h1>
+    <hr>
+    
+    <h2>TEACHERS GALLERY</h2>
+    
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="principal.JPG" alt="Mountains" style="width:100%">
+          <h3>Nontobeko Speelman</h3>
+          <p>Hi, this is Nontobeko Speelman she is the founder of the community centre called Cuma Educare Centre. She started looking after the children since 2012 and she saw it as a need in the community. Being a teacher was her dream so instead she started her own centre. The parents started to trust since then till now she's still stading and growing her business.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="babies.jpg" alt="Lights" style="width:100%">
+          <h3>Zuziwe Jubeju</h3>
+          <p>Hi, this is Zuziwe Jubeju a practitioner at Cuma Educare Centre. She started working with the centre at 2012 so she has been working since then. She's a very good hardworking woman and good at taking care of the babies with the nappies.  </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="Sibeko.jpg" alt="Nature" style="width:100%">
+          <h3>Luleka Sibeko</h3>
+          <p>Hi, this is Luleka Sibeko also a practitioner at Cuma Educare Centre. She started at the year of 2018 till now. She is a hardworker and also a loving person, so for her taking care of the chidren is her skill.</p>
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+    
+    
+    
+    <!-- END MAIN -->
+    </div>
+    
+          
+    </body>
+    </html>

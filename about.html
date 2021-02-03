@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cuma Ecd</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <style> 
+h1 {text-align: center;
+   font-size: 50px;
+   word-break: break-all;
+}
+p {text-align: center;
+  font-family: 'times new roman';
+  font-size: 25px;
+  } 
+ul{font-family:'times new roman';
+   font-size: 25px;
+}
+body {
+  background-color: lightgrey;
+}
+.avatar {
+  vertical-align: left;
+  width: 200px;
+  height: 200px;
+  border-square: 200%;
+}
+.sidebar {
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  </style>
+    </head>
+    <body>
+      <img src="logo.jpg" alt="Avatar" class="avatar">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="staff.html">Staff</a>
+            <a href="contacts.html">Contact</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">☰ Click For More Info</button>  
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
+          <h1>About Cuma Ecd</h1>
+          <hr>
+
+          <p>Cuma Educare Centre is a community day care that takes care after children and gives them lessons to grow. Their absolute aim is to look after children since 2012. At the year of 2012 Cuma has taken care of the children about 35 of them . At this period Cuma Educare Centre is taking care of children about 98 to 105 during the school hours</p> 
+          <br>
+          <p>Cuma is a non-profit organisation,registered with the Department of Social Development. Cuma is not getting funding from the government. Cuma provides basic education and knowledge to develop the community and a safety and good place to our chidren. This environment is vulnerable and has growth potential due to the experience we gained since we started Cuma Educare Centre. Nkanini Squatter Camp has families, parents, single and married who are having stable job struggling to pay fees. When dealing with issues of affordability, we have to use other available resources and supporting programmes in order to assist with other other challenges. Cuma Educare Centre has since received a donation from the Department of Arts and Culture, to provide a safe place and compliant ECD for children. The Education has a very important role to play in our communiyt.</p>
+          <br>
+          <p>The challenges we are facing in our community towards children include the children being rape, murderd, stolen and generally neglectde by their parents. Children are vplaying in the rubbish ands thus are getting infections and diseases.</p>
+          <br>
+          
+          <h1>Services</h1>
+          <hr>
+          <p>We take care of children from the age of:
+            <ul>
+            <li>0-6 years old</li>
+            <li>Babies from the age of 0-2 years old have their own class with their own teacher to take care of them.</li>
+            <li>Children from the age of 2-3 years old, they've got their own teacher and own class.</li>
+            <li>Children from the age of 4-5 years old, they also have their own class and teacher.</li>
+          </ul>
+        </p>
+         <p>We start from 07:00 till 16:00. Then the after care starts from 16:00 till 17:30. </p>
+           
+    </body>
+    </html>
